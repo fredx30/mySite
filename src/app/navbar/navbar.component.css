@@ -1,0 +1,14 @@
+
+
+.spacer {
+  flex: 1 1;
+}
+.logo {
+  height: inherit;
+  box-sizing: unset;
+}
+.mat-button {
+}
+.mat-input {
+  padding: 4px 4px 4px 4px;
+}

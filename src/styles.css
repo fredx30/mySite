@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import '~@angular/material/prebuilt-themes/pink-bluegrey.css'; */
+
+body{margin:0}
+
+mat-form-field{
+  padding: 16px;
+}
+
+.flow-container-list {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+}
+.flow-container-stack {
+
+}
+
+.flow-container-sidebar {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  align-content: center !important;
+}

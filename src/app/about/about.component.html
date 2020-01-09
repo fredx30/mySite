@@ -1,0 +1,61 @@
+<!--
+ - Page is setup into 2 collumns where collumn one is larger than a right side pane.
+ - The side pane is used to display details and extras.
+ -
+ -->
+<mat-list class="flow-container-list">
+
+  <mat-list class="flow-container-stack">
+
+  <mat-card>
+    <mat-card-title> About Me </mat-card-title>
+    <p>
+      Hello! My name is Fredrik. For the past 4 years i have been studying at Chalmers in Gothenburg.
+    </p>
+    <img mat-card-md-image class="logo" src="../../assets/selfie.jpg" alt="Portrait">
+  </mat-card>
+
+  <mat-card role="article">
+    <mat-card-title> Projects at G.U.D. (Chalmers Studentkår) </mat-card-title>
+    <mat-card-content> Whilst working with the student union at chalmers i got a chance to work with many advanced enterprise systems.
+      We were tasked with keeping all the systems alive and well. We also got the chance to drive through a few
+      larger scale improvement projects.
+    </mat-card-content>
+    <mat-tab-group>
+      <mat-tab label="Website hosting">
+        <p> The year before us had recently moved the webhosting infrastructure to a Plesk 17. We took on the task
+          of upgrading and aiding in upgrading 50+ deprecated php sites starting at sites as old as php 5.3 (year 2014).
+          This project was a double edged sword in the aspects that it allowed us to secure the chalmers student union's
+          committee's websites against attacks and it increased our security reputation with our ISP - Chalmers IT.
+        </p>
+      </mat-tab>
+      <mat-tab label="On-premise & Cloud - Hybrid Datacenter">
+        <p> transitioning an on-prem datacenter to a hybrid setup with the possibility of moving resources offsite. </p>
+      </mat-tab>
+      <mat-tab label="Network Infrastructure">
+        <p> ...- </p>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+  </mat-list>
+
+  <!-- Here ends main body
+ - Here starts side panel -->
+  <mat-list class="flow-container-sidebar">
+    <mat-card>
+      <mat-card-title> Details </mat-card-title>
+      <p> Rännvägen 7, 41258, Göteborg,
+        Sweden, +46 72 314 41 53
+        fredrik@dyrvold.dev
+      </p>
+      <h4> Nationality </h4>
+      <p> Swedish </p>
+      <h4> Skills </h4>
+
+
+    </mat-card>
+  </mat-list>
+
+</mat-list>
+
+

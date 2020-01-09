@@ -1,0 +1,10 @@
+
+.text-in-grid > ::ng-deep figure {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+.logo > {
+  height: inherit;
+  box-sizing: unset;
+}
