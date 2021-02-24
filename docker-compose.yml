@@ -1,0 +1,12 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    image: node:14
+    working_dir: /var/www
+    ports:
+      - "4200:4200"
+    expose:
+      - 4200
+    volumes:
+    - .:/var/www
+    command: "npx ng serve --host 0.0.0.0"
