@@ -5,8 +5,17 @@ services:
     working_dir: /var/www
     ports:
       - "4200:4200"
-    expose:
-      - 4200
     volumes:
     - .:/var/www
     command: "npx ng serve --host 0.0.0.0"
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: app_db
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_store:/var/lib/mysql
+volumes:
+  db_store:
